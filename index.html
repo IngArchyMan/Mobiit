@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobiit DashBoard</title>
+    <link rel="shortcut icon" href="assets/MobiitLogo.png">
+    <script src="https://kit.fontawesome.com/cfde28f896.js"></script>
+<link href="main.f14ceecec63ffca6b748.css" rel="stylesheet"></head>
+<body>
+    <header class="header_menu">
+        <div class="main-menu-lateral">
+          <div class="wrapper">
+            <div class="main__top main_logo">
+              <img src="assets/MobiitLogo.png" alt="Logo Modulo Cliente" class="menu__logo">
+            </div>
+            <div class="main__middle">
+              <div class="content nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <div class="menu__item nav-link active" id="pills-overview-tab" data-toggle="pill" href="#pills-overview" role="tab" aria-controls="pills-overview" aria-selected="false">
+                  <span class="icon-content"><i class="fas fa-tachometer-alt"></i></span>
+                </div>
+                <div class="menu__item nav-link" id="pills-report-tab" data-toggle="pill" href="#pills-report" role="tab" aria-controls="pills-report" aria-selected="false">
+                  <span class="icon-content"><i class="far fa-file-alt"></i></span>
+                </div>
+                <div class="menu__item nav-link " id="pills-publicity-tab" data-toggle="pill" href="#pills-publicity" role="tab" aria-controls="pills-publicity-tab" aria-selected="true">
+                  <span class="icon-content"><i class="fas fa-ad"></i></span>
+                </div>
+                <div class="menu__item nav-link" id="pills-booking-tab" data-toggle="pill" href="#pills-booking" role="tab" aria-controls="pills-booking" aria-selected="false">
+                  <span class="icon-content"><i class="fas fa-list"></i></span>
+                </div>
+                <div class="menu__item nav-link" id="pills-user-tab" data-toggle="pill" href="#pills-user" role="tab" aria-controls="pills-user" aria-selected="false">
+                  <span class="icon-content"><i class="far fa-user"></i></span>
+                </div>
+                <div class="menu__item nav-link disabled" id="pills-cogs-tab" data-toggle="pill" href="#pills-cogs" role="tab" aria-controls="pills-cogs" aria-selected="false">
+                  <span class="icon-content"><i class="fas fa-cogs"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="main__bottom"><span class="icon_open_menu"><i class="fas fa-arrow-right"></i></span></div>
+          </div>
+        </div>
+      </header>
+      <main>
+          <div class="container-fluid">
+            <div class="upper-header-us">
+                <div class="row">
+                    <div class="col-4 col-lg-3 col-f-imf-u">
+                        <div class="wrapper">
+                            <div class="content-img">
+                                <img src="xxxHTMLLINKxxx0.373475130872849670.7190401380995042xxx" alt="" class="img-f-u">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-7 col-f-info-u">
+                      <div class="wrapper">
+                          <h1 class="tile-u"></h1>
+                          <p class="helper-text now-date"></p>
+                      </div>
+                    </div>
+                    <div class="col-2 col-lg-2 col-f-opt">
+                        <div class="wrapper">
+                            <div class="row">
+                                <div class="col-i-not"><i class="far fa-bell"></i></div>
+                                <div class="col-i-out"><i class="fas fa-sign-out-alt"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="down-tabs-content">
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="pills-overview" role="tabpanel" aria-labelledby="overview-tab">
+                  <div class="wrapper">
+                    <div class="row">
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-aforo">
+                        <div class="container content-dash-color">
+                          <h3>Aforo Actual</h3>
+                          <div class="content-text">
+                            <div class="content-aforo">
+                              <p class="aforo-text"></p>
+                            </div>
+                            <div class="ct-chart aforo-chart"></div>    
+                            <div id="chart1"></div>                  
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-pepIn">
+                        <div class="container content-dash-color">
+                          <h3 class="inm-r-mo-txt">Ingreso de personas</h3>
+                          <div class="content-text">
+                            <div class="ct-chart count-aforo-chart"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-report">
+                        <div class="container content-dash-color">
+                          <h3>Ingresos de hoy <small class="helper-text">Se muestran los últimos 100</small></h3>
+                          <div class="content-income-table"></div>
+                        </div>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-report" role="tabpanel" aria-labelledby="report-tab">
+                  <div class="wrapper">
+                    <div class="row">
+                      <div class="col-12 col-jumb">
+                        <div class="container content-dash-color">
+                          <h3>Reporte de Ingresos</h3>
+                          <div class="content-text">
+                            <h5>Crear reporte por:</h5>
+                            <div class="row">                              
+                              <div class="col col-year">
+                                <div class="pretty p-svg p-curve">
+                                  <input type="radio" name="typeFRadio" id="year-radio" checked/>
+                                  <div class="state p-success">
+                                      <!-- svg path -->
+                                      <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                          <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                      </svg>
+                                      <label>Año</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col col-monthA">
+                                <div class="pretty p-svg p-curve">
+                                  <input type="radio" name="typeFRadio" id="monthA-radio"/>
+                                  <div class="state p-success">
+                                      <!-- svg path -->
+                                      <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                          <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                      </svg>
+                                      <label>Mes anterior</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col col-monthC">
+                                <div class="pretty p-svg p-curve">
+                                  <input type="radio" name="typeFRadio" id="monthC-radio"/>
+                                  <div class="state p-success">
+                                      <!-- svg path -->
+                                      <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                          <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                      </svg>
+                                      <label>Mes (corrido)</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col col-perso">
+                                <div class="content">
+                                  <div class="pretty p-svg p-curve">
+                                    <input type="radio" name="typeFRadio" id="perso-radio" />
+                                    <div class="state p-success">
+                                        <!-- svg path -->
+                                        <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                            <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                        </svg>
+                                        <label>Personalizado</label>
+                                    </div>
+                                  </div>
+                                  <div class="input-flatpicker">
+                                    <input type="text" class="picker">
+                                  </div>                                
+                                </div>
+                              </div>
+                            </div>
+                            <button class="btn btn-warning btn-search"><span class="text-btn-search mr-1">Crear reporte</span><div class="spinner-border spinner-border-sm text-dark" role="status"><span class="sr-only">Loading...</span></div></button>
+                          </div> 
+                        </div>
+                      </div>
+                      <div class="col-12 report-generator">
+                        <div class="container content-dash-color">
+                          <div class="content-report-table"></div>
+                          <button class="btn btn-outline-warning btn-downLoad">Descargar reporte</button>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-publicity" role="tabpanel" aria-labelledby="publicity-tab">
+                  <div class="wrapper">
+                    <div class="row">
+                      <div class="col-12 col-jumb-pub">
+                        <div class="container content-dash-color">
+                          <h3>Publicidad</h3>
+                          <div class="content-text">
+                            <div class="row">
+                              <div class="col-6 col-lg-5 col-sm-4">
+                                <div class="content">
+                                    <h4>Cantidad de Imágenes</h4>
+                                    <p class="q-img"></p>
+                                </div>
+                              </div>
+                              <div class="col-6 col-lg-5 col-sm-4">
+                                <div class="content">
+                                    <h4>Cantidad de Videos</h4>
+                                    <p class="q-vid"></p>
+                                </div>
+                              </div>
+                              <div class="col-12 col-sm-3">
+                                <div class="content">                    
+                                  <button class="btn btn-success btn-add-pub" data-toggle="modal" data-target="#modalNewContent"> Agregar Contenido</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-public">
+                        <div class="container content-dash-color">
+                          <h3>Publicidad Activa</h3>
+                          <div class="content-public-table"></div>
+                        </div>
+                      </div>       
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="modalNewContent" tabindex="-1" aria-labelledby="modalNewContent" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="modalNewContent">Nuevo contendio para publicitar</h5>
+                          <button type="button" class="close close-modal-pub" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <input id="file" type="file" class="input-add-pb" accept="image/png, image/jpeg, image/jpg, video/mov, video/mp4"/>
+                          <div class="content-result mt-5">
+                            <div class="container-fluid">
+                              <img class="img-selected">
+                              <video class="vid-selected" autoplay loop mute></video>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">                
+                          <button type="button" class="btn btn-primary btn-save-photo">Guardar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade " id="pills-booking" role="tabpanel" aria-labelledby="booking-tab">
+                  <div class="wrapper">
+                      <div class="row">
+                        <div class="col-12 col-jum-rsr">
+                          <div class="container content-dash-color">
+                            <h2>Reservas</h2>
+                            <div class="content-text">
+                              <div class="row">
+                                <div class="text-one col-6">
+                                  <div class="content">
+                                    <h4>Reservas Activas</h4>
+                                    <p class="q-activ"></p>
+                                  </div>                                
+                                </div>
+                                <div class="text-two col-6">
+                                  <div class="content">
+                                    <h4>Reservas Confirmadas</h4>
+                                    <p class="q-confirm"></p>
+                                  </div>
+                                </div>      
+                              </div>             
+                            </div>
+                          </div>  
+                        </div>
+                      </div>
+                    <div class="wrapper">
+                      <div class="row">
+                        <div class="col-12 col-reserv">
+                          <div class="container content-dash-color">
+                            <h3>Historico reservas hoy</h3>
+                            <div class="content-reserv-table"></div>
+                          </div>
+                        </div>                
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-user" role="tabpanel" aria-labelledby="user-tab">
+                  <div class="wrapper">
+                    <div class="row">
+                        <div class="cover-profile-photo"></div>
+                        <div class="col-12 col-lg-12 col-md-12 col-jum-user">
+                          <div class="container content-user-dash-color">
+                            <div class="content">
+                              <div class="content-profile">
+                                <div class="content-border"><img alt="user" class="pic-user-photo"></div>
+                                <div class="content-profile-nick"><p class="user-profile-name"></p></div>
+                                <span class="icon icon-edit-pencil"><i class="fas fa-pencil-alt"></i> Editar perfil</span>
+                              </div>
+                            </div>
+                          </div>
+                         </div>                     
+                       <div class="col-12 col-lg-12 col-md-12 col-info-user">
+                        <div class="container content-dash-color">
+                          <div class="content">
+                            <div class="row">
+                              <div class="col-12 ">
+                                <span class="icon"><i class="far fa-compass"></i></span>
+                                <p class="text-field txt-location"></p>
+                              </div>
+                              <div class="col-12">
+                                <span class="icon"><i class="fas fa-glass-cheers"></i></span>
+                                <p class="text-field txt-type"></p>
+                              </div>
+                              <div class="col-12">
+                                <span class="icon"><i class="fas fa-users"></i></span>
+                                <p class="text-field txt-aforo"></p>
+                              </div>
+                              <div class="col-12">
+                                <span class="icon"><i class="fas fa-swatchbook"></i></span>
+                                <p class="text-field txt-colors">Colores de la App:</p>
+                                <span class="color-app-txt"></span>
+                                <input type="color" class="color-app">
+                              </div>
+                              <div class="col-12">
+                                <span class="icon"><i class="fas fa-adjust"></i></span>
+                                <p class="text-field txt-colors">Light/Dark Mode: </p>
+                                <div class="content-mode">
+                                  <span class="mode-app-btn">
+                                    <i class="f-icon-mode fas fa-sun"></i>
+                                    <p class="state-mode">Light</p>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </main>
+<script type="text/javascript" src="main.af5705ee208f17fc2cdd.js"></script></body>
+</html>
